@@ -1,5 +1,6 @@
 *{
     font-family: "Lora", serif;
+    
 }
 
 input.form-control::placeholder {
@@ -34,5 +35,10 @@ input.form-control::placeholder {
     }
     .rating{
       color: rgb(32, 82, 208);
+    }
+      @media (max-width: 768px) {
+      body {
+        padding-top: 280px; /* extra space for stacked nav */
+      }
     }
 
