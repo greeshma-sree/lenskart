@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Glasses</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -------------------------google fonts------------------------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libertinus+Math&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ---------------------------cdn------------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------------------bootstrap---------------------------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+</head>
+
+<body>
+    <header class="bg-white fixed-top shadow-sm">
+        <!-- Top Links -->
+        <div class="bg-light py-1 px-3 d-flex justify-content-between small">
+            <div class="d-flex flex-wrap gap-2">
+                <a href="#" class="text-decoration-none text-dark">StoreLocator</a>
+                <a href="#" class="text-decoration-none text-dark">Singapore</a>
+                <a href="#" class="text-decoration-none text-dark">UAE</a>
+                <a href="#" class="text-decoration-none text-dark">John Jacobs</a>
+                <a href="#" class="text-decoration-none text-dark">Aqualens</a>
+                <a href="#" class="text-decoration-none text-dark">Cobrowsing</a>
+                <a href="#" class="text-decoration-none text-dark">Engineering Blog</a>
+                <a href="#" class="text-decoration-none text-dark">Partner With Us</a>
+            </div>
+            <div>
+                <a href="#" class="text-decoration-none text-dark">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="container-fluid py-3 d-flex align-items-center flex-wrap justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+                <img src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg" alt="Lenskart Logo"
+                    height="40">
+                <div class="fw-bold text-dark fs-6"><i class="fa-solid fa-phone-volume"></i> 99998 99998</div>
+            </div>
+
+            <div class=" mx-1">
+                <input type="text" class="form-control" placeholder="What are you looking for?">
+            </div>
+
+            <div class="d-flex gap-3 small align-items-left">
+                <a href="#" class="text-decoration-none text-dark">Track Order</a>
+                <a href="#" class="text-decoration-none text-dark">Sign In & Sign Up</a>
+                <a href="#" class="text-decoration-none text-dark"><i class="fa-regular fa-heart"></i>
+                    Wishlist</a>
+                <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-cart-shopping"></i>
+                    Cart</a>
+            </div>
+        </div>
+
+        <!-- Category Nav -->
+        <div class="py-2">
+            <div class="container-fluid gap-2">
+                <a href="./eyeglasses.html" class="text-decoration-none text-dark fw-bold ms-5">EYEGLASSES</a>
+                <a href="./screenglasses.html" class="text-decoration-none text-dark fw-bold ms-5">SCREEN GLASSES</a>
+                <a href="./index.html" class="text-decoration-none text-dark fw-bold ms-5">KIDS GLASSES</a>
+                <a href="#" class="text-decoration-none text-dark fw-bold ms-5">CONTACT LENSES</a>
+                <a href="#" class="text-decoration-none text-dark fw-bold ms-5">SUNGLASSES</a>
+                <a href="#" class="text-decoration-none text-dark fw-bold ms-5">HOME EYE-TEST</a>
+                <a href="#" class="text-decoration-none text-dark fw-bold ms-5">STORE LOCATOR</a>
+
+            </div>
+        </div>
+    </header>
+    <div class="container py-5 px-5">
+        <div class="pt-5">
+            <img src="https://static5.lenskart.com/media/uploads/hk-web_13062025_rat.gif" alt="" width="100%">
+        </div>
+        <div class="row pt-5">
+            <div class="col-4">
+
+                <div class="card pt-5" style="width: 100%;">
+                    <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-square-lenskart-air-fusion-la-e13069-c1-eyeglasses_lenskart-air-la-e13033-c1-eyeglasses_eyeglasses_g_7875_1b_28july23.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div><span class="badge bg-light text-dark">4.8 ★ 3151</span></div>
+                        <h6 class="mt-2 text-bold">Lenskart Air</h6>
+                        <p class="text-muted">Size: Medium · Air Fusion</p>
+                    </div>
+
+                    <p class="text-center">
+                        <span class="price">₹1500</span>
+                        <span class="old-price"><del>₹2000</del></span>
+                        <span class="offer">(25% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card pt-5" style="width: 100%;">
+                    <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/grey-transparent-gray-full-rim-rectangle-lenskart-air-signia-la-e14573-c3-eyeglasses_g_2477_09-july.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div><span class="badge bg-light text-dark">4.8 ★ 3151</span></div>
+                        <h6 class="mt-2 text-bold">Lenskart Air</h6>
+                        <p class="text-muted">Size: Medium · Air Fusion</p>
+                    </div>
+                    <p class="text-center">
+                        <span class="price">₹1500</span>
+                        <span class="old-price"><del>₹2000</del></span>
+                        <span class="offer">(25% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <iframe width="418" height="480"
+                    src="https://www.youtube.com/embed/lZCwIzSyo14?list=TLGGCkrLVMz-qOkyODA3MjAyNQ"
+                    title="Hooper Memphis" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-4">
+
+                <div class="card pt-5" style="width: 100%;">
+                    <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//model/h/i/blue-transparent-black-grey-full-rim-rectangle-kids-(8-12-yrs)-hooper-flexi-hooper-hp-e15084l-c3-eyeglasses_23_nov_kids_m.f182856_204402_26_11_2022.jpg"
+                        class="card-img-top" alt="...">
+                    
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card pt-5" style="width: 100%;">
+                    <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//model/h/i/blue-transparent-black-grey-full-rim-rectangle-kids-(8-12-yrs)-hooper-flexi-hooper-hp-e15084l-c3-eyeglasses_24_nov_kids_shoot183474_204402_29_nov_2022.jpg"
+                        class="card-img-top" alt="...">
+                  
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card pt-5" style="width: 100%;">
+                    <img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/i/pink-gold-pink-full-rim-cat-eye-john-jacobs-tr-flex-jj-e-14409-c6-eyeglasses__dsc5656.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div><span class="badge bg-light text-dark">4.8 ★ 3151</span></div>
+                        <h6 class="mt-2 text-bold">Lenskart Air</h6>
+                        <p class="text-muted">Size: Medium · Air Fusion</p>
+                    </div>
+                    <p class="text-center">
+                        <span class="price">₹1500</span>
+                        <span class="old-price"><del>₹2000</del></span>
+                        <span class="offer">(25% OFF)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
